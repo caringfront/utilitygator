@@ -1,0 +1,8 @@
+applications:
+- name: utilitygator
+  path: ./dist
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  random-route: false
+  memory: 128M
+  env:
+    FORCE_HTTPS: true
